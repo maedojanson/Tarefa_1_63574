@@ -1,29 +1,26 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public sealed class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [Header("Configurações de Movimento")]
-    public float speed = 20.0f;        // Aparece no Inspector
-    public float turnSpeed = 45.0f;    // Aparece no Inspector
-
-    private float verticalInput;
+    // Variáveis que podes ajustar no Unity Inspector
+    public float speed = 20.0f;
+    public float turnSpeed = 45.0f;
+    
     private float horizontalInput;
-
-    public void OnMove(InputValue value)
-    {
-        Vector2 movementVector = value.Get<Vector2>();
-        verticalInput = movementVector.y;
-        horizontalInput = movementVector.x;
-    }
+    private float forwardInput;
 
     void Update()
     {
-        // Movimento para a frente e trás
-        // Se 20 for lento, podes digitar 100 ou 200 no Inspector durante o Play Mode
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        // 1. Receber o input do utilizador (Setas ou WASD)
+        horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
 
-        // Rotação
+        // 2. Mover o veículo para a frente e para trás
+        // Tradução: Direção * Tempo * Velocidade * Input do Jogador
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+
+        // 3. Rodar o veículo (Fazer a curva)
+        // Usamos Rotate para que o carro vire de forma realista em vez de apenas deslizar
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
