@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Dog
   - Ball
+  - Enemy
   layers:
   - Default
   - TransparentFX
