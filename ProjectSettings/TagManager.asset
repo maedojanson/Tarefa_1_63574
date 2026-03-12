@@ -9,6 +9,8 @@ TagManager:
   - Dog
   - Ball
   - Enemy
+  - Ground
+  - Obstacle
   layers:
   - Default
   - TransparentFX

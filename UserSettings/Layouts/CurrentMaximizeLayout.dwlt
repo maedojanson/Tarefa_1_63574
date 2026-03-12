@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 89
+  controlID: 47
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -691,9 +691,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 15.808872, y: 1.589262, z: 8.363913}
+    m_Target: {x: 59.8617, y: -8.257407, z: -45.40466}
     speed: 2
-    m_Value: {x: 15.808872, y: 1.589262, z: 8.363913}
+    m_Value: {x: 59.8617, y: -8.257407, z: -45.40466}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -739,20 +739,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11130386, y: 0.1295998, z: -0.014642594, w: -0.98519325}
+    m_Target: {x: -0.26119232, y: -0.09220903, z: 0.025076948, w: -0.960551}
     speed: 2
-    m_Value: {x: -0.112803385, y: 0.12809971, z: -0.014667755, w: -0.98521614}
+    m_Value: {x: -0.2683876, y: -0.09201785, z: 0.025767678, w: -0.9585599}
   m_Size:
-    m_Target: 17.767826
+    m_Target: 68.80796
     speed: 2
-    m_Value: 17.781162
+    m_Value: 68.80796
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 1.0005
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0014995
+    m_SpeedNormalized: 0.5005
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 90
+  controlID: 48
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -829,7 +829,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 91
+  controlID: 49
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -899,11 +899,11 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: -3100
+      - m_Data: 53900
       m_LastClickedID:
-        m_Data: -3100
+        m_Data: 53900
       m_ExpandedIDs:
-      - m_Data: -2534
+      - m_Data: -5876
       - m_Data: -1296
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1230,7 +1230,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Course Library/Ground
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1240,31 +1240,32 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Course Library/Ground
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/inesna/Desktop/Prototype_1_63574
+  m_LastProjectPath: /Users/inesna/Desktop/MOTORES DE JOGO/TAREFA 1/Prototype_1_63574
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 47176
+    - m_Data: 54124
     m_LastClickedID:
-      m_Data: 47176
+      m_Data: 54124
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46852
-    - m_Data: 46854
-    - m_Data: 46856
-    - m_Data: 46858
-    - m_Data: 46860
-    - m_Data: 46862
-    - m_Data: 46864
-    - m_Data: 46866
-    - m_Data: 46868
-    - m_Data: 46870
-    - m_Data: 47172
+    - m_Data: 46882
+    - m_Data: 46884
+    - m_Data: 46886
+    - m_Data: 46888
+    - m_Data: 46890
+    - m_Data: 46892
+    - m_Data: 46894
+    - m_Data: 46896
+    - m_Data: 46898
+    - m_Data: 46900
+    - m_Data: 46902
+    - m_Data: 47220
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1298,16 +1299,17 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46852
-    - m_Data: 46854
-    - m_Data: 46856
-    - m_Data: 46858
-    - m_Data: 46860
-    - m_Data: 46862
-    - m_Data: 46864
-    - m_Data: 46866
-    - m_Data: 46868
-    - m_Data: 46870
+    - m_Data: 46882
+    - m_Data: 46884
+    - m_Data: 46886
+    - m_Data: 46888
+    - m_Data: 46890
+    - m_Data: 46892
+    - m_Data: 46894
+    - m_Data: 46896
+    - m_Data: 46898
+    - m_Data: 46900
+    - m_Data: 46902
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1335,8 +1337,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -3100
-    m_LastClickedInstanceID: -3100
+    - m_Data: 53900
+    m_LastClickedInstanceID: 53900
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 38070

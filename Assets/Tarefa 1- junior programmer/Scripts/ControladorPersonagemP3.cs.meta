@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b7ea18b186d34dba8dc33ffcd544f61
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - particulaExplosao: {instanceID: 0}
+  - particulaPoeira: {instanceID: 0}
+  - somSalto: {fileID: 8300000, guid: 08ab7053d586c458db3774d33c141a4b, type: 3}
+  - somBatida: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
