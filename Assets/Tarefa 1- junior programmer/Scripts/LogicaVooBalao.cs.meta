@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 71dd0596e3bb3486486887327b3179d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rbBalao: {instanceID: 0}
+  - audioBalao: {instanceID: 0}
+  - particulaExplosao: {instanceID: 0}
+  - particulaMoeda: {instanceID: 0}
+  - somPulo: {fileID: 8300000, guid: 113ee460fadc340e4957a7404a9fbb27, type: 3}
+  - somBomba: {fileID: 8300000, guid: 774ebc5c074ce4695b7cc310fbd44087, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
