@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 
-public class DetetarColisoes : MonoBehaviour
+public class DetectarColisao : MonoBehaviour
 {
+    // Ajusta este valor se o teu chão for noutra posição (ex: 0 ou 1)
+    private float alturaDoChao = 5.0f; 
+
     void OnTriggerEnter(Collider other)
     {
-        // Só faz alguma coisa se o objeto que o cão tocou for uma BOLA
-        // (Garante que as tuas bolas têm a Tag "Ball" ou o nome "Ball")
-        if (other.gameObject.name.Contains("Ball") || other.CompareTag("Ball"))
+        // 1. Só morre se bater no cão...
+        if (other.CompareTag("Dog"))
         {
-            Destroy(gameObject);       // Destrói o cão
-            Destroy(other.gameObject); // Destrói a bola
+            // 2. ...E se a bola já estiver lá em baixo! ✅
+            // Se a posição Y da bola for menor que 5 (perto do cão)
+            if (transform.position.y < alturaDoChao)
+            {
+                Debug.Log("Puff! Bati no cão lá em baixo! 🐶");
+                Destroy(gameObject); // Destrói a bola
+            }
         }
-        
-        // Se o cão bater noutro cão, o código ignora e eles passam um pelo outro!
     }
 }

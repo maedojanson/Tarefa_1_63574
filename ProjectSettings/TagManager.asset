@@ -11,6 +11,14 @@ TagManager:
   - Enemy
   - Ground
   - Obstacle
+  - Powerup
+  - Bolinha
+  - InimigoCubo
+  - Money
+  - Bomb
+  - Projetil
+  - PowerupEscudo
+  - TiroPlayer
   layers:
   - Default
   - TransparentFX

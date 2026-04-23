@@ -1107,24 +1107,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
+      propertyPath: m_Size.x
+      value: 0.07375191
+      objectReference: {fileID: 0}
+    - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: m_Size.y
-      value: 0.25495458
+      value: 0.30319926
       objectReference: {fileID: 0}
     - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: m_Size.z
-      value: 0.26588488
+      value: 0.3354949
       objectReference: {fileID: 0}
     - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: m_Center.x
-      value: 0.005066282
+      value: 0.026097456
       objectReference: {fileID: 0}
     - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: m_Center.y
-      value: 0.099686265
+      value: 0.12380852
       objectReference: {fileID: 0}
     - target: {fileID: 8241448879431697764, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: m_Center.z
-      value: 0.030390311
+      value: 0.035564195
       objectReference: {fileID: 0}
     - target: {fileID: 8241448879431697766, guid: 3e5fe95e580114a5f8f8348678e77463, type: 3}
       propertyPath: velocidade

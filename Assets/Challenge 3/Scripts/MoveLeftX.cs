@@ -1,33 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MoveLeftX : MonoBehaviour
 {
-    public float speed;
-    private PlayerControllerX playerControllerScript;
-    private float leftBound = -10;
+    public float speed = 15.0f;
+    private LogicaVooBalao scriptBalao;
 
-    // Start is called before the first frame update
     void Start()
     {
-        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
+        // Encontra o balão para saber se o jogo acabou
+        GameObject player = GameObject.Find("Player");
+        if (player != null) scriptBalao = player.GetComponent<LogicaVooBalao>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // If game is not over, move to the left
-        if (playerControllerScript.gameOver)
+        // Só anda se o balão ainda estiver vivo! ✅
+        if (scriptBalao != null && !scriptBalao.jogoAcabou)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
         }
 
-        // If object goes off screen that is NOT the background, destroy it
-        if (transform.position.x < leftBound && !gameObject.CompareTag("Background"))
-        {
-            Destroy(gameObject);
-        }
-
+        // Se fugir do ecrã, apaga para não pesar ✅
+        if (transform.position.x < -15) Destroy(gameObject);
     }
 }

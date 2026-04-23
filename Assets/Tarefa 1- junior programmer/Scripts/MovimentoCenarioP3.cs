@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class GeradorObstaculosP3 : MonoBehaviour
 {
@@ -33,4 +33,4 @@ public class GeradorObstaculosP3 : MonoBehaviour
             Instantiate(prefabs[index], spawnPos, prefabs[index].transform.rotation);
         }
     }
-}
+}*/
