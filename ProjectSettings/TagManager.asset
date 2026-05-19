@@ -19,6 +19,9 @@ TagManager:
   - Projetil
   - PowerupEscudo
   - TiroPlayer
+  - Sensor
+  - Bad
+  - Municao
   layers:
   - Default
   - TransparentFX

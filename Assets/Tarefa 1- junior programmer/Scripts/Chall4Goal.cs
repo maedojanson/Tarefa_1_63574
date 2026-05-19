@@ -1,21 +1,27 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Garante que continua aqui para podermos reiniciar ✅
 
 public class Chall4Goal : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        // Se a bola do inimigo entrar no centro da baliza verde... ✅
+        // Se a bola do inimigo (ou o inimigo) entrar na tua baliza...
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("GOLO! O inimigo entrou na baliza!");
+            // Alterado para a mensagem que querias! 💀
+            Debug.Log("💀 GAME OVER! O adversário marcou golo na tua baliza!");
             
-            // Destruímos a bola
+            // Destruímos a bola imediatamente para dar efeito de golo
             Destroy(other.gameObject);
 
-            // Reiniciamos o jogo para a Vaga 1 ✅
-            // Usar SceneManager é a forma mais segura de limpar tudo e recomeçar
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // Chama a função de reiniciar após 1 segundo (dá tempo de respirar!) ✅
+            Invoke("RestartGame", 1.0f);
         }
+    }
+
+    void RestartGame()
+    {
+        // Limpa a vaga atual e recomeça o desafio do zero
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

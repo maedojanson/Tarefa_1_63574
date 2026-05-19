@@ -451,7 +451,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da0d89a6b73784cadace5b2a88421a9c, type: 2}
+  - {fileID: 2100000, guid: 42b224efc5a8c4863a87e224a72bb1ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lab4SpawnManager
   bolaPrefab: {fileID: 7482499497149514754, guid: 6de4abb2b9eb744d78c1513b4f82cdf0, type: 3}
   cuboPrefab: {fileID: 3936273459759187631, guid: 13683e5afea024755b52be33b8f8788d, type: 3}
-  escudoPrefab: {fileID: 1471959033}
+  cavaloPrefab: {fileID: 0}
 --- !u!4 &554321193
 Transform:
   m_ObjectHideFlags: 0
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 1953705344}
   - component: {fileID: 1953705343}
   - component: {fileID: 1953705342}
-  - component: {fileID: 1953705341}
+  - component: {fileID: 1953705347}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: InimigoCubo
@@ -1919,24 +1919,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1953705341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953705340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07bf8436b23e94c5084259d97fea059f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lab4Shooter
-  player: {fileID: 1459477202}
-  bolaInimigaPrefab: {fileID: 10491206488320951, guid: 115c430cddd0148149b5581499bce850, type: 3}
-  speed: 2
-  shootingRange: 10
-  fireRate: 2
-  forcaDoTiro: 10
 --- !u!54 &1953705342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2059,6 +2041,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 578.66003, z: 0}
+--- !u!114 &1953705347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953705340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b864677a611349e8a7a059e4b059c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lab4Shooter
+  player: {fileID: 1459477202}
+  bolaInimigaPrefab: {fileID: 10491206488320951, guid: 115c430cddd0148149b5581499bce850, type: 3}
+  speed: 2
+  shootingRange: 12
+  fireRate: 2
+  forcaDoTiro: 25
 --- !u!1001 &2021091725
 PrefabInstance:
   m_ObjectHideFlags: 0
