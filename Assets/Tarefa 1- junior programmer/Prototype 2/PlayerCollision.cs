@@ -11,13 +11,13 @@ public class PlayerCollision : MonoBehaviour
         {
             Debug.Log("GAME OVER! Um animal atingiu a Farmer!");
             
-            // Destrói a Farmer
+            // 1. Faz o animal desaparecer (Otimizado para Pooling!)
+            other.gameObject.SetActive(false);
+            
+            // 2. Destrói a Farmer (Fim de jogo)
             Destroy(gameObject);
             
-            // Opcional: Destrói também o animal que a atingiu
-            Destroy(other.gameObject);
-            
-            // Congela o jogo para mostrar que acabou
+            // 3. Congela o jogo para mostrar que acabou
             Time.timeScale = 0;
         }
     }
