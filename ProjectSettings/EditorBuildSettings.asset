@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/My Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Tarefa 1- junior programmer/ModTheCube.unity
-    guid: 0837f2ea600db39419ef0a366d70b9de
+    path: Assets/Tarefa 1- junior programmer/DataPersiMenu.unity
+    guid: 24bc0ea79df234b4dbcdd00fc662a613
+  - enabled: 1
+    path: Assets/Tarefa 1- junior programmer/DataPersistence.unity
+    guid: 78a510c781f19db4da14f78ebb30946a
+  - enabled: 0
+    path: Assets/Tarefa 1- junior programmer/Main.unity
+    guid: 49eb575efe7f42741b60381cc0e8b633
+  - enabled: 0
+    path: Assets/Tarefa 1- junior programmer/Menu.unity
+    guid: ae666798a74d3a5488e0c0ec42a1265d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
